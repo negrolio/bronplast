@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bronplast SRL Distribuidor Mayorista</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -23,7 +24,8 @@
       background-color: #333;
       color: #fff;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
       box-sizing: border-box;
     }
 
@@ -32,18 +34,28 @@
       height: 300px;
     }
 
-    .logo-container {
+    .flex {
+      display: flex;
+    }
+
+    .flex-center {
       display: flex;
       justify-content: center;
     }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
   </style>
 </head>
 <body>
   <header>
     <!-- Tu logo aquí -->
-    <div class="logo-container">
+    <div class="flex-center">
       <div class="logo">
-        <object type="image/svg+xml" data="./result.svg"></object>
+        <object type="image/svg+xml" data="./assets/images/BRONPLAST_LOGO_3.svg"></object>
       </div>
     </div>
   </header>
@@ -55,15 +67,32 @@
 
       <h3>No se realizan ventas ni cobros por este ni ningun otro medio digital u online</h3>
 
-      <h3>Ante cualquier duda comuniquese con nosotros al telefono o email brindados aqui abajo</h3>
+      <h3>Ante cualquier duda comuniquese con nosotros por telefono o email</h3>
 
       <p>Gracias</p>
     </section>
   </main>
   <footer>
-    <p>Teléfono: TELÉFONO</p>
-    <p>Dirección: DIRECCIÓN</p>
-    <p>Email: email@example.com</p>
+    <div class="flex-column">
+      <div class="flex">
+        <p>Teléfonos:</p>
+        <ul>
+          <li>(0299) 442 - 3017</li>
+          <li>(0299) 15 - 447000</li>
+          <li>(0299) 15 - 447001</li>
+        </ul>
+      </div>
+
+      <div class="flex">
+        <p>Emails:</p>
+        <ul>
+          <li>ventas@distribuidorabp.com.ar</li>
+          <li>proveedores@distribuidorabp.com.ar</li>
+        </ul>
+      </div>
+
+      <p>Dirección: Río Neuquén 66, Neuquén, Argentina</p>
+    </div>
   </footer>
 </body>
 </html>
